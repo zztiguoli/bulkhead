@@ -1,0 +1,120 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3 Safari/605.1.15" version="29.6.4">
+  <diagram name="第 1 页" id="5zntf6R4B2P5Ixix6b2c">
+    <mxGraphModel dx="1234" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#1e293b;letterSpacing=2;" value="标准安全流程图：可信硬件与节点身份认证 (UML 泳道规范)" vertex="1">
+          <mxGeometry height="60" width="1200" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#f0f9ff;strokeColor=#bae6fd;strokeWidth=2;fontColor=#ffffff;fillColor=#0284c7;fontSize=16;fontStyle=1;" value="TEE 可信执行环境 (Edge Node)" vertex="1">
+          <mxGeometry height="770" width="360" x="60" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-3" parent="k9rTct8aoSRzPTlSGaSd-2" style="ellipse;fillColor=#1e293b;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="170" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-4" parent="k9rTct8aoSRzPTlSGaSd-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;TEE 安全环境初始化&lt;/b&gt;&lt;br/&gt;▪ 划分 TrustZone 安全域&lt;br/&gt;▪ 初始化底层密码学算法库" vertex="1">
+          <mxGeometry height="80" width="260" x="50" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-5" parent="k9rTct8aoSRzPTlSGaSd-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;建立软硬协同总线&lt;/b&gt;&lt;br/&gt;▪ 绑定 TEE 与 HSM 内部接口&lt;br/&gt;▪ 确保密钥调用的闭环安全" vertex="1">
+          <mxGeometry height="80" width="260" x="50" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-6" parent="k9rTct8aoSRzPTlSGaSd-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;采集系统环境度量值&lt;/b&gt;&lt;br/&gt;▪ 测量 Bootloader 与 TEE 固件哈希" vertex="1">
+          <mxGeometry height="70" width="260" x="50" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-7" parent="k9rTct8aoSRzPTlSGaSd-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0284c7;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;组装远程证明请求&lt;/b&gt;&lt;br/&gt;▪ 封装签名 Quote 向云端发起认证" vertex="1">
+          <mxGeometry height="70" width="260" x="50" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-8" parent="k9rTct8aoSRzPTlSGaSd-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#0f172a;strokeWidth=3;fontStyle=1;fontSize=16;" value="身份构建完成，服务就绪" vertex="1">
+          <mxGeometry height="60" width="260" x="50" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#f0fdf4;strokeColor=#bbf7d0;strokeWidth=2;fontColor=#ffffff;fillColor=#16a34a;fontSize=16;fontStyle=1;" value="HSM 硬件安全模块 (Edge Node)" vertex="1">
+          <mxGeometry height="770" width="360" x="420" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-10" parent="k9rTct8aoSRzPTlSGaSd-9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;HSM 硬件策略配置&lt;/b&gt;&lt;br/&gt;▪ 设置 PIN 码与硬件访问控制&lt;br/&gt;▪ 锁定高权限物理通信接口" vertex="1">
+          <mxGeometry height="80" width="260" x="50" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-11" parent="k9rTct8aoSRzPTlSGaSd-9" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#16a34a;strokeWidth=2;" value="&lt;b&gt;生成并存储 Root Key&lt;/b&gt;&lt;br/&gt;(确保硬件生命周期内不出域)" vertex="1">
+          <mxGeometry height="90" width="260" x="50" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-12" parent="k9rTct8aoSRzPTlSGaSd-9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16a34a;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;硬件级数字签名 (Quote)&lt;/b&gt;&lt;br/&gt;▪ 验证度量请求合法性&lt;br/&gt;▪ 使用物理根密钥签署度量报告" vertex="1">
+          <mxGeometry height="80" width="260" x="60" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-13" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#faf5ff;strokeColor=#e9d5ff;strokeWidth=2;fontColor=#ffffff;fillColor=#9333ea;fontSize=16;fontStyle=1;" value="云端管理 / 联盟链节点 (Cloud)" vertex="1">
+          <mxGeometry height="770" width="360" x="780" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-14" parent="k9rTct8aoSRzPTlSGaSd-13" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9333ea;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;下发远端验证挑战&lt;/b&gt;&lt;br/&gt;▪ 管理节点发起入网查验&lt;br/&gt;▪ 生成防重放攻击随机数(Nonce)" vertex="1">
+          <mxGeometry height="80" width="260" x="50" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-15" parent="k9rTct8aoSRzPTlSGaSd-13" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9333ea;strokeWidth=2;align=left;spacingLeft=10;" value="&lt;b&gt;校验硬件合法性与完整性&lt;/b&gt;&lt;br/&gt;▪ 验证 HSM 厂商证书与状态哈希" vertex="1">
+          <mxGeometry height="70" width="260" x="50" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-16" parent="k9rTct8aoSRzPTlSGaSd-13" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#9333ea;strokeWidth=2;" value="&lt;b&gt;签发节点身份认证凭证&lt;/b&gt;&lt;br/&gt;(允许节点合法接入联盟链)" vertex="1">
+          <mxGeometry height="80" width="260" x="50" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-17" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;" target="k9rTct8aoSRzPTlSGaSd-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-18" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;labelBackgroundColor=#ffffff;" target="k9rTct8aoSRzPTlSGaSd-10" value="唤醒指令">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="230" />
+              <mxPoint x="450" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-19" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;" target="k9rTct8aoSRzPTlSGaSd-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-20" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;" target="k9rTct8aoSRzPTlSGaSd-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-21" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;" target="k9rTct8aoSRzPTlSGaSd-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="490" />
+              <mxPoint x="240" y="490" />
+            </Array>
+            <mxPoint x="830" y="470" as="sourcePoint" />
+            <mxPoint x="330" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-22" connectable="0" parent="k9rTct8aoSRzPTlSGaSd-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="随机数(Nonce)" vertex="1">
+          <mxGeometry relative="1" x="0.5" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-23" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;labelBackgroundColor=#ffffff;" target="k9rTct8aoSRzPTlSGaSd-12" value="度量Hash值">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-24" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#64748b;dashed=1;labelBackgroundColor=#ffffff;" target="k9rTct8aoSRzPTlSGaSd-7" value="签名的Quote">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="620" />
+              <mxPoint x="330" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-25" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;labelBackgroundColor=#ffffff;" target="k9rTct8aoSRzPTlSGaSd-15" value="完整证明(Quote)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="675" />
+              <mxPoint x="830" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-26" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;" target="k9rTct8aoSRzPTlSGaSd-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k9rTct8aoSRzPTlSGaSd-27" edge="1" parent="1" source="k9rTct8aoSRzPTlSGaSd-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#64748b;dashed=1;labelBackgroundColor=#ffffff;" target="k9rTct8aoSRzPTlSGaSd-8" value="身份证书(X.509)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="775" />
+              <mxPoint x="330" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
